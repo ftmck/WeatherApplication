@@ -18,12 +18,6 @@ namespace WeatherApp
         {
             var host = CreateHostBuilder(args).Build();
 
-            //var scope = host.Services.CreateScope();
-            //var services = scope.ServiceProvider;
-            //var loggerFactory = services.GetRequiredService<ILoggerFactory>();
-            //var context = services.GetRequiredService<WeatherContext>();
-            //await CountryContextSeed.SeedAsync(context, loggerFactory);
-
             using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
@@ -31,10 +25,10 @@ namespace WeatherApp
                 try
                 {
                     var context = services.GetRequiredService<WeatherContext>();
-                    //await CountryContextSeed.SeedAsync(context, loggerFactory);
-                    //await CityContextSeed.SeedAsync(context, loggerFactory);
-                    //await WeatherHeaderContextSeed.SeedAsync(context, loggerFactory);
-                    //await DetailDataContextSeed.SeedAsync(context, loggerFactory);
+                    await CountryContextSeed.SeedAsync(context, loggerFactory);
+                    await CityContextSeed.SeedAsync(context, loggerFactory);
+                    await WeatherHeaderContextSeed.SeedAsync(context, loggerFactory);
+                    await DetailDataContextSeed.SeedAsync(context, loggerFactory);
                 }
                 catch (Exception ex)
                 {
