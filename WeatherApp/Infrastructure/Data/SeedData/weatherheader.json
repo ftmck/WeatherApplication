@@ -1,0 +1,16 @@
+[
+{
+"CityId":1,
+"Visibility":6000,
+"DewPoint":73,
+"RelativeHumidity":62,
+"Pressure":1011
+},
+{
+"CityId":2,
+"Visibility":10000,
+"DewPoint":79,
+"RelativeHumidity":79,
+"Pressure":1011
+}
+]
