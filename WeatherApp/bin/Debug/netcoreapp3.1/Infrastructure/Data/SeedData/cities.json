@@ -1,10 +1,14 @@
 [
-{
-"Name":"Jakarta",
-"CountryId":1
-},
-{
-"Name":"Tangerang",
-"CountryId":1
-}
+  {
+    "Name":"Jakarta",
+    "CountryId":1
+  },
+  {
+    "Name": "Tangerang",
+    "CountryId": 1
+  },
+  {
+    "Name": "Canberra",
+    "CountryId": 2
+  }
 ]

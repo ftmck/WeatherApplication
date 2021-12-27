@@ -1,12 +1,17 @@
 [
-{
-"Longitude":106.8451,
-"Latitude":-6.2146,
-"WeatherId":1
-},
-{
-"Longitude":106.63,
-"Latitude":-6.1781,
-"WeatherId":2
-}
+  {
+    "Longitude":106.8451,
+    "Latitude":-6.2146,
+    "WeatherId":1
+  },
+  {
+    "Longitude": 106.63,
+    "Latitude": -6.1781,
+    "WeatherId": 2
+  },
+  {
+    "Longitude": 149.1281,
+    "Latitude": -35.2835,
+    "WeatherId": 3
+  }
 ]
