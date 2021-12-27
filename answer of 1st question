@@ -1,0 +1,8 @@
+1. 
+if the table / data is well structured, i think better to use interpolation search because this algorithm doesn't need explore the whole table. so it could reduce the searching data process.
+but the interpolation search can be well runned if the table already well structured. this technique finds items with estimating how far the possibility of the item being out of position at that time and the next quest.
+
+but if the table / data is not well structured, i recommend to use binary search because it works repeatedly dividing in half the portion of the list that could contain the item, until you've narrowed down the possible locations to just one.
+
+2. if the data set is sorted and uniformly distributed (well structured), the time complexity for interpolation search is O(log2(log2N)) where N is the total number elements in the array
+but unfortunately if the data is not well structured, interpolation search could be worse than binary search.
