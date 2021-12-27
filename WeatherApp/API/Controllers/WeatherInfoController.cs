@@ -7,6 +7,8 @@ using WeatherApp.Infrastructure.Services;
 
 namespace WeatherApp.API.Controllers
 {
+    [ApiController]
+    [Route("api/[controller]")]
     public class WeatherInfoController : Controller
     {
         private readonly IWeatherInfoService _weatherInfoService;

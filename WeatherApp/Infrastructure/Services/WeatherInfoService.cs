@@ -74,11 +74,14 @@ namespace WeatherApp.Infrastructure.Services
             var convertedTemperature = await ConvertTemperature(temperatureData);
             #endregion
 
+            var setDate = DateTime.Now;
+            var onlyDate = setDate.Date;
+
             #region Result Data
             selectedWeather.CityId = getWeatherByCity.CityId;
             selectedWeather.CityName = getCityName.Name;
             selectedWeather.Location = locationData;
-            selectedWeather.Time = DateTime.Now.ToString();
+            selectedWeather.Time = onlyDate.ToString("dd/MM/yyyy");
             selectedWeather.Wind = windData;
             selectedWeather.Visibility = getWeatherByCity.Visibility;
             selectedWeather.SkyCondition = skyData;

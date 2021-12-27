@@ -9,6 +9,8 @@ using WeatherApp.Infrastructure.Services;
 
 namespace WeatherApp.API.Controllers
 {
+    [ApiController]
+    [Route("api/[controller]")]
     public class CityController : Controller
     {
         private readonly ICityService _cityService;

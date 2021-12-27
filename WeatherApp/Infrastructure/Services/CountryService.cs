@@ -31,8 +31,41 @@ namespace WeatherApp.Infrastructure.Services
                 allCountries.Add(assignData);
             }
 
+            //return new ResponseResult<List<CountryModel>>()
+            //{
+            //    Message = "",
+            //    Success = true,
+            //    Result = allCountries
+            //};
+
             return allCountries;
         }
+
+        //public async Task<ResponseResult<List<CountryModel>>> GetAllCountries()
+        //{
+        //    List<CountryModel> allCountries = new List<CountryModel>();
+
+        //    var getAllCountries = await _repo.GetCountriesAsync();
+
+        //    foreach (var item in getAllCountries)
+        //    {
+        //        var assignData = new CountryModel();
+
+        //        assignData.Id = item.Id;
+        //        assignData.Name = item.Name;
+
+        //        allCountries.Add(assignData);
+        //    }
+
+        //    return new ResponseResult<List<CountryModel>>()
+        //    {
+        //        Message = "",
+        //        Success = true,
+        //        Result = allCountries
+        //    };
+
+        //    //return allCountries;
+        //}
 
         public async Task<CountryModel> GetSelectedCountry(int countryId)
         {

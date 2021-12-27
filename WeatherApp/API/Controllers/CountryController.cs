@@ -11,7 +11,7 @@ using WeatherApp.Infrastructure.Services;
 namespace WeatherApp.API.Controllers
 {
     [ApiController]
-    [Route("api/controller")]
+    [Route("api/[controller]")]
     public class CountryController : ControllerBase
     {
         //private readonly ICountryRepository _repo;
@@ -29,11 +29,21 @@ namespace WeatherApp.API.Controllers
         }
 
 
+        //[HttpGet("GetAllCountries")]
+        //public async Task<ResponseResult<List<CountryModel>>> GetAllCountries()
+        //{
+        //    var countries = await _countryService.GetAllCountries();
+
+        //    return countries;
+        //    //return Ok(countries);
+        //}
+
         [HttpGet("GetAllCountries")]
         public async Task<ActionResult<List<CountryModel>>> GetAllCountries()
         {
             var countries = await _countryService.GetAllCountries();
 
+            //return countries;
             return Ok(countries);
         }
 
